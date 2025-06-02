@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h2>JavaScript String Loops</h2>
+    <head>
 
+    </head>
+    <body>
+        <button onclick="Multiply(4)">Click me!</button>
+        <p id="result"></p>
         <script>
-            var fruit = ["Apple", "Banana", "Cherry", "Date", "Elderberry", 
-                         "Fig", "Grape", "Honeydew", "Lychee", "Longan", 
-                        "Pitaya", "Jackfruit", "Kiwi", "Lemon", "Mango", "Ananas",
-                        "Orange", "Papaya", "Quince", "Raspberry", "Strawberry"
-                        , "Tangerine", "Ugli fruit", "Vanilla", "Watermelon",
-                        "Xigua", "Yuzu", "Zucchini", "Lotus Fruit"];
-            
-            for (i = 0; i < fruit.length; i++) {
-                var text = fruit[i] + '<br>';
-                document.write(text);
+            function Multiply(a,b) {
+                if (b === undefined) {
+                    alert ("The value of B is undefined")
+                    b = 5; 
+                }
+                var result = a * b;
+        
             }
         </script>
     </body>
